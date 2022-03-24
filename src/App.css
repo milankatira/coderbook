@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   width: 100vw;
   color: #f5f5f5;
 }
@@ -43,8 +42,7 @@ footer a {
   margin-bottom: 30px;
 }
 
-
-.inputBox{
+.inputBox {
   padding: 10px;
   border-radius: 10px;
   outline: none;
@@ -56,22 +54,25 @@ footer a {
 }
 
 .btn {
-  border:none;
+  border: none;
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.joinBtn {
+.joinBtn,
+.leaveBtn {
   background-color: #4aee88;
   width: 100px;
   margin-left: auto;
 }
 
-.joinBtn:hover{
-  background:#2b824c;
+.joinBtn:hover,
+.leaveBtn:hover {
+  background: #2b824c;
 }
 
 .createInfo {
@@ -80,14 +81,78 @@ footer a {
 }
 
 .createNewBtn {
-  color:#4aee88;
+  color: #4aee88;
   text-decoration: none;
   border-bottom: 1px solid #4aee88;
   transition: all 0.3s ease-in-out;
 }
 
-.createNewBtn:hover , footer a:hover{
+.createNewBtn:hover,
+footer a:hover {
   color: #368654;
   border-color: #368654;
 }
 
+.mainWrap {
+  display: grid;
+  color: #fff;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+}
+
+.aside {
+  background-color: #1c1e29;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  display: flex;
+  flex-direction: column;
+}
+
+.asideInner {
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  margin-bottom: 10px;
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  color: #eee;
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 1.6;
+  font-size: 20px;
+}
