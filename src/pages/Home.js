@@ -14,6 +14,7 @@ const Home = () => {
   };
 
   const joinRoom = () => {
+    console.log(userName);
     if (!userName || !roomId) {
       toast.error("Please enter all the fields");
     } else {
